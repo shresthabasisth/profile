@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title> Photo Gallery
+</title>
+<div id="heading">
+<h1> My Pets' Photo Album </h1>
+</div>
+</head>
+<style>
+
+#heading
+{
+     color: white;
+     background: yellow;
+     width: 50%;
+     text-align:center;
+     margin:auto;
+
+}
+#polaroid
+{
+    background: white;
+    border-style: solid;
+    border-width : 2 px;
+    border-color: black;
+    border radius: 30px 30px 30px 30px;
+    box-shadow : 10px 10px 10px;  
+}
+.pic
+{
+     display: grid;
+     background: gray;
+     width: 5%;
+     padding: 10px;
+     cursor: pointer;
+     text-align: center;
+     margin = 70px;
+}
+body
+{
+     background : url('image/group.jpg');
+     background-attachment : fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+}
+</style>
+<body>
+<div class = "pic">
+<div id = "polaroid">
+<img src= "image/zoey.jpg">
+</div>
+<div id = "polaroid">
+<img src = "image/mopsy.jpg">
+</div>
+<div id = "polaroid">
+<img src= "image/flox.jpg">
+</div>
+<div id = "polaroid">
+<img src ="image/pablo.jpg">
+</div>
+</div>
+</body>
+</html>
