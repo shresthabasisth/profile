@@ -1,66 +1,83 @@
 <!doctype html>
 <html>
 <head>
-<title> Photo Gallery
-</title>
-<div id="heading">
-<h1> My Pets' Photo Album </h1>
-</div>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Photo Gallery </title>
 <style>
+#heading {
+    color: white;
+    background: yellow;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
 
-#heading
-{
-     color: white;
-     background: yellow;
-     width: 50%;
-     text-align:center;
-     margin:auto;
+.pic {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    margin-top: 50px;
+}
 
+#polaroid {
+   
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 10px;
 }
-#polaroid
-{
-    background: white;
-    border-style: solid;
-    border-width : 2 px;
-    border-color: black;
-    border radius: 30px 30px 30px 30px;
-    box-shadow : 10px 10px 10px;  
-}
-.pic
-{
-     display: grid;
-     background: gray;
-     width: 5%;
-     padding: 10px;
-     cursor: pointer;
-     text-align: center;
-     margin = 70px;
-}
-body
-{
-     background : url('image/group.jpg');
-     background-attachment : fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
 
+#polaroid:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
+#polaroid img
+ {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+}
+
+body {
+    background: url('image/group.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p
+{
+ font-family: 'Times New Roman', serif;
+ color: white;
+ text-align: center;
+ font-size: 20px;
+} 
 </style>
+</head>
 <body>
-<div class = "pic">
-<div id = "polaroid">
-<img src= "image/zoey.jpg">
+<div id="heading">
+    <h1> My Pets' Photo Album </h1>
 </div>
-<div id = "polaroid">
-<img src = "image/mopsy.jpg">
+<div class="pic">
+    <div id="polaroid">
+        <img src="image/zoey.jpg" alt="Zoey">
+       <p><a href="video.html"> Zoey </a> </p>
+    </div>
+    <div id="polaroid">
+        <img src="image/mopsy.jpg" alt="Mopsy">
+        <p><a href="video1.mp4"> Mopsy </a> </p>
+    </div>
+    <div id="polaroid">
+        <img src="image/flox.jpg" alt="Flox">
+        <p> <a href="video2.mp4"> Flox </a></p>
+    </div>
+    <div id="polaroid">
+        <img src="image/pablo.jpg" alt="Pablo">
+        <p> <a href="video3.mp4"> Pablo </a> </p>
+    </div>
 </div>
-<div id = "polaroid">
-<img src= "image/flox.jpg">
-</div>
-<div id = "polaroid">
-<img src ="image/pablo.jpg">
-</div>
-</div>
+
 </body>
 </html>
